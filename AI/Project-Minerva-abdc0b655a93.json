@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "project-minerva-e8729",
+  "private_key_id": "abdc0b655a93d6f4c99db70c604ada15618cc7ce",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC1jD8mEU0c+xEj\n4e5/oFMkdy5QlNoJER1f3/p9h0WT0uPxcVPb4HVrummJ3dh/6n8yf0aKAcE9E3kT\ns6Qq8wQjWlmTtRgx9zeZgPY9jIPj2D7SqiyOM4ErMzQezPf2YVgfsiiy10jQbyGh\nh7pPMprUA3nrv48eiZOikZ84Uq1z25eTACBXadaxiOc5tBIs6hAxCAfjlnTyX400\nPtzjHEf3V3iGknLi9A1UBQ1ER+XvJ/RH+sOJaS7HQhWZSdDFVWJIU2i8OCVUILNM\nFkhfojJzT/wBPy4zLwIcZjb0kXikyuC3pfnNWP9GIciGcq5l5u1CBnn6qRGkqur9\ngBNvk6WnAgMBAAECggEASnkRnogSXgUP7uxLbcdS0+6f7SZimr2OkznKA5xuCknE\nf9LBV70n7d02VfvPSAnly80yHoLBxlAqps5WVdgCpo31mQX8uuJyyGGCoZT2tYyL\nmNd+F4dBQXtrsgba4RLll3r5/wMZN4efACgxYTOdF8OlS/P0vc4p5dJewjgINzH4\ne+1bUgBjigb9zdvFtE8CKGm/p0gYzfz8jdMsBDw6ICXtBx8SUkh6lEI5/JMjjttz\nT5yk1pejUclcnOiQaVDMAqM/WT7Vz+yjxAHo3rrbOxBrz1X70UfypsjcvWlAW7tP\neSUC3rKjNIsbH9NA7sQ8bkDl6zFRH5hC3SxYeGYk4QKBgQDctQoTWM8eZCjpVaj4\niIC+EkgP92rg47wGtV1+TkGsg6iugzvzCcUB8vM+0z+bC6H3I6NqpxYQI5/ej9xF\nEVaodrJnbO6iFPKUSTBmlENj6Gk+lkJaAzjO2Pgak1sTisVii3ZWXruMYz+v4e1s\n799tL5QHLBHbW/CzWiU3auHHfQKBgQDSlCoDGO1SUD7kvluWbEK2alvK0I7DRLV6\nvL2MN+m+kSAh6e5jCi2qPmZ/CUQEBe1+4ktYPmu1FFWOUQZst+ggSQI6l3vzxnNy\ndZuZV4rlVwbSchfhaVOsNbj2Hbyk0O5ECyhmuFeTCqovFmx9glIzmkMGermHGfpz\ndpGxWdaS8wKBgQC2dsGGryREZt/f0B6qogd1nB2RfaYRmJUpIqXRtxbabdp1tC9K\nxWfnLZjl9rWeE+bqL795e/tkil8wG9UqEKSJD+B8WvWKcDEAYOWv2KFCJrFjucvP\nKNy9PWkYZ3yjUlXPG6dQzm7VKHRNj0W/iyw201/Y8hktNfxv+nXMNAPG7QKBgQCs\niQt3KDhi5i7x+upN8HwkvDZjkcg3RBex7e0ccz+IjZ4XS3WwHknWIHSYh7370eOK\nv91d+x8C6htDlS2/bFu8ADXcTfwYe7RhxuzrkifSyyBi02qvnT4abpYSycCkBjAC\n/mVm7ImMiANyu1u+5kV11GIwb+ONR4LGkhLDjklacwKBgD5IWYXnBTSChG8qo5bE\nk1kDy1SYhdrVoBPE4MekQ9iP39BU1uIoN3qHoWhSlb6DjJw6mmJGhvtJ+HcKaaYK\nwPAlFSDwh2qeRSpr4y0Rv4VeCT3HolLu/rWKND5lDAFNctBa0YZ6lCr1VZmE3rQ7\n5BTTTzWRu9MmsAf/fnM80JOv\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-gn8b9@project-minerva-e8729.iam.gserviceaccount.com",
+  "client_id": "108645862505926486522",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-gn8b9%40project-minerva-e8729.iam.gserviceaccount.com"
+}

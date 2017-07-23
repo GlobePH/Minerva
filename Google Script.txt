@@ -1,0 +1,89 @@
+// Code from : http://embedded-lab.com/blog/post-data-google-sheets-using-esp8266/
+
+// This method will be called first or hits first  
+function doGet(e){
+  Logger.log("--- doGet ---");
+ 
+ var humidity = "",
+     airTemp = "",
+     waterTemp = "",
+     waterPH = "",
+     lightIntensity = "",
+     atmCO2 = "";
+ 
+  try {
+ 
+    // this helps during debuggin
+    if (e == null){e={}; e.parameters = {humidity:"-1",airTemp:"-1",waterTemp:"-1",waterPH:"-1",lightIntensity:"-1",atmCO2:"-1"};}
+ 
+    humidity = e.parameter.humidity;
+    airTemp = e.parameter.airTemp;
+    waterTemp = e.parameter.waterTemp;
+    waterPH = e.parameter.waterPH;
+    lightIntensity = e.parameter.lightIntensity;
+    atmCO2 = e.parameter.atmCO2;
+    
+    // save the data to spreadsheet
+    save_data(humidity, airTemp,waterTemp,waterPH,lightIntensity,atmCO2);
+    
+    return ContentService.createTextOutput("Wrote:\n  humidity: " + humidity
+                                           + "\n  airTemp: " + airTemp 
+                                           + "\n  waterTemp: " + waterTemp 
+                                           + "\n  waterPH: " + waterPH 
+                                           + "\n  lightIntensity: " + lightIntensity 
+                                           + "\n  atmCO2: " + atmCO2);
+  } catch(error) { 
+    Logger.log(error);    
+    return ContentService.createTextOutput("ooooooooooops... \n  humidity: " + humidity
+                                           + "\n  airTemp: " + airTemp 
+                                           + "\n  waterTemp: " + waterTemp 
+                                           + "\n  waterPH: " + waterPH 
+                                           + "\n  lightIntensity: " + lightIntensity 
+                                           + "\n  atmCO2: " + atmCO2);
+  }  
+}
+ 
+// Method to save given data to a sheet
+function save_data(humidity, airTemp,waterTemp,waterPH,lightIntensity,atmCO2){
+  Logger.log("--- save_data ---"); 
+ 
+ 
+  try {
+    var dateTime = new Date();
+    
+ 
+    // Paste the URL of the Google Sheets starting from https thru /edit
+    // For e.g.: https://docs.google.com/..../edit 
+    var ss = SpreadsheetApp.openByUrl("https://docs.google.com/spreadsheets/d/12sXBG4si3KX4EwNwhLfEgc1uEKXMyuN3x8zirQirSdQ/edit");
+    //var summarySheet = ss.getSheetByName("Summary");
+    var dataLoggerSheet = ss.getSheetByName("DataSheet");
+ 
+ 
+    // Get last edited row from DataLogger sheet
+    var row = dataLoggerSheet.getLastRow() + 1;
+ 
+ 
+    // Start Populating the data
+    dataLoggerSheet.getRange("A" + row).setValue(row -1); // ID
+    dataLoggerSheet.getRange("B" + row).setValue(dateTime); // dateTime
+    dataLoggerSheet.getRange("C" + row).setValue(dateTime.toLocaleTimeString()); // dateTime
+    dataLoggerSheet.getRange("D" + row).setValue(humidity); // tag
+    dataLoggerSheet.getRange("E" + row).setValue(airTemp); // value
+    dataLoggerSheet.getRange("F" + row).setValue(waterTemp); // tag
+    dataLoggerSheet.getRange("G" + row).setValue(waterPH); // value
+    dataLoggerSheet.getRange("H" + row).setValue(lightIntensity); // tag
+    dataLoggerSheet.getRange("I" + row).setValue(atmCO2); // value
+ 
+ 
+ 
+    // Update summary sheet
+    //summarySheet.getRange("B1").setValue(dateTime); // Last modified date
+    // summarySheet.getRange("B2").setValue(row - 1); // Count 
+  }
+ 
+  catch(error) {
+    Logger.log(JSON.stringify(error));
+  }
+ 
+  Logger.log("--- save_data end---"); 
+}
