@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.russm.trial.login">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="1080dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_dashboard"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/returnButton"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/button_return"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PROJECT MINERVA"
+        android:textColor="#ffffff"
+        android:layout_marginStart="83dp"
+        android:layout_alignTop="@+id/returnButton"
+        android:layout_toEndOf="@+id/returnButton" />
+
+    <ImageButton
+        android:id="@+id/humidityButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/imageView"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="104dp"
+        android:layout_toEndOf="@+id/returnButton"
+        android:background="@drawable/humidity_logo" />
+    <ImageButton
+        android:id="@+id/waterButton"
+        android:layout_width="45dp"
+        android:layout_height="70dp"
+        android:background="@drawable/waterlvl_logo"
+        android:layout_marginEnd="82dp"
+        android:layout_above="@+id/yieldButton"
+        android:layout_alignParentEnd="true" />
+    <ImageButton
+        android:id="@+id/tempButton"
+        android:layout_width="30dp"
+        android:layout_height="70dp"
+        android:background="@drawable/temperature_logo"
+        android:layout_alignBottom="@+id/yieldButton"
+        android:layout_alignEnd="@+id/waterButton"
+        android:layout_marginEnd="7dp" />
+    <ImageButton
+        android:id="@+id/yieldButton"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:background="@drawable/yield_logo"
+        android:layout_below="@+id/humidityButton"
+        android:layout_alignStart="@+id/humidityButton"
+        android:layout_marginTop="95dp" />
+
+    <TextView
+        android:id="@+id/texthumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humidity"
+        android:textAlignment="center"
+        android:layout_below="@+id/humidityButton"
+        android:layout_alignEnd="@+id/humidityButton"
+        android:layout_marginTop="11dp" />
+    <TextView
+        android:id="@+id/texttemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature"
+        android:textAlignment="center"
+        android:layout_alignBaseline="@+id/textyield"
+        android:layout_alignBottom="@+id/textyield"
+        android:layout_alignEnd="@+id/textwater" />
+    <TextView
+        android:id="@+id/textwater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Water Level"
+        android:textAlignment="center"
+        android:layout_alignBottom="@+id/texthumidity"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="67dp"
+        android:layout_alignTop="@+id/texthumidity" />
+    <TextView
+        android:id="@+id/textyield"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yield"
+        android:layout_marginTop="22dp"
+        android:layout_marginStart="12dp"
+        android:layout_below="@+id/yieldButton"
+        android:layout_alignStart="@+id/texthumidity" />
+
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.russm.trial.login">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="230dp"
+        android:layout_height="160dp"
+        android:background="@drawable/bg_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/bg_login_1"
+        android:text="LOGIN"
+        android:layout_marginTop="360dp"
+        android:layout_centerHorizontal="true"
+         />
+
+    <Button
+        android:id="@+id/create"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/bg_create"
+        android:text="CREATE ACCOUNT"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/create"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="minerva" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/username"
+        android:layout_alignTop="@+id/username"
+        android:layout_marginTop="59dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="minerva" />
+
+
+
+</RelativeLayout>
